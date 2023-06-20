@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "tailwindcss build src/style.css -o public/tuk.css",
-    "watch": "cross-env TAILWIND_MODE=watch postcss src/style.css -o public/tuk.css -w"
+    "watch": "cross-env TAILWIND_MODE=watch postcss src/style.css -o public/tuk.css -w",
+    "build": "tailwindcss build src/style.css -o public/tuk.css"
   },
   "repository": {
     "type": "git",
