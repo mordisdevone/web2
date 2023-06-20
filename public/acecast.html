@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS boilerplate</title>
+    <link href="tuk.css" rel="stylesheet" />
+    <link rel="stylesheet" href="splide/css/splide.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@next/dist/css/splide.min.css">
+    <link href="style_1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+<body>
+
+    <!-- Header section starts -->
+    <header class="bg-white bg-opacity-90 fixed top-0 left-0 right-0 z-50 py-4">
+        <nav class="container mx-auto flex items-center justify-between px-4">
+            <div>
+              <a href="index.html">
+                <img src="https://tempoquest.com/wp-content/uploads/2021/05/logo-white-transcended.png.webp" alt="TQI Logo" class="h-10">
+              </a>
+            </div>
+            <div class="hidden md:flex space-x-7">
+              <a href="#products" class="text-gray-900 font-semibold">Products</a>
+              <a href="#industries" class="text-gray-900 font-semibold">Industries</a>
+              <a href="#services" class="text-gray-900 font-semibold">Services</a>
+              <a href="#ourteam" class="text-gray-900 font-semibold">Our Team</a>
+              <a href="#news" class="text-gray-900 font-semibold">News</a>
+              <a href="#contact" class="text-gray-900">Contact</a>
+            </div>
+          </nav>
+    </header>
+    <!-- Your header section ends -->
+
+       
+    <!-- HERO SECTION -->
+    <section class=" py-20 lg:px-4 xl:px-0" style="overflow: hidden;">
+        <div class="flex flex-col-reverse md:flex-row">
+            <div class="mt-12 md:mt-0 flex flex-col lg:ml-10 xl:ml-32 2xl:ml-40 lg:w-6/12 xl:w-5/12 md:w-6/12 px-4 lg:px-0 justify-center">
+                <h1 class="text-4xl  lg:text-6xl font-bold md:font-black leading-10 dark:text-white text-gray-700">AceCAST: Powering Weather Forecasts with GPU Technology</h1>
+                <p class="text-lg text-gray-600 dark:text-gray-200  font-light leading-relaxed pt-8 xl:hidden block">AceCAST is a trailblazer in weather modeling, leveraging GPU Technology for high-resolution regional forecasts. It's globally available, customizable, and combines various data feeds. Experience forecasts that are 10x faster and 3x more cost-effective than traditional models.</p>
+                <p class="text-lg text-gray-600 dark:text-gray-200  font-light leading-relaxed pt-8 xl:block hidden w-4/5">
+                    AceCAST is a trailblazer in weather modeling, leveraging GPU Technology for high-resolution regional forecasts. It's globally available, customizable, and combines various data feeds. Experience forecasts that are 10x faster and 3x more cost-effective than traditional models.
+                </p>
+                <div class="mt-12 flex flex-wrap">
+                    <div class="mr-6 mt-5 sm:mt-0 md:mt-5 lg:mt-0">
+                        <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-4 text-base md:text-xl">Read the Docs</button>
+                    </div>
+                    <div class="mt-5 sm:mt-0 md:mt-5 lg:mt-0">
+                        <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-600 text-indigo-600 px-8 py-4 text-base md:text-xl">Register for free Trial</button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:mt-0  md:w-1/2 relative lg:mt-0 pl-6 sm:pl-20 pt-10 flex justify-end sm:block">
+                <div class="ml-14 relative z-10  left-0 w-full h-full">
+                    <img class="inset-0 object-cover object-center xl:object-contain  w-2/3 h-full" src="https://tempoquest.com/wp-content/uploads/2021/09/AceCAST-hurricane.gif" alt="A group of three people having a meeting" role="img" />
+                </div>
+                <div aria-hidden="true" class="absolute z-0 h-full w-full md:w-40  lg:w-full top-5 left-0 md:left-10 lg:left-0 flex flex-col items-start">
+                    <img class="h-96 md:h-auto" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/left_aligned_with_image_and_cta-SVG1.svg" alt="pattern">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO SECTION ENDS -->
+
+    <!-- AceCast Advantage SECTION -->
+    <section class="partners-section py-12 bg-gray-100 aceadvantage">
+        <div class="container flex flex-wrap md:flex-nowrap justify-between items-start py-20 px-10">
+            <!-- Problem Column -->
+            <div class="w-full md:w-1/2 pr-0 md:pr-10 mb-10 md:mb-0 ">
+                <img src="w1.png" alt="Problem Image" class="w-full h-auto mb-8 shadow-lg transform -rotate-3">
+                <h2 class="text-2xl font-bold mb-4">The Problem</h2>
+                <p class="text-gray-700 mb-4">The cost of ineffective and non-forecasted weather in lost business profit is 3.4% of GDP or $714 billion for 2022. This has long been considered the cost of doing business. It does not have to be this way.</p>
+                <h2 class="text-2xl font-bold mb-4">Generic Modeling Solutions</h2>
+                <ul class="list-none pl-5 text-gray-700">
+                    <li><i class="fas fa-times text-red-500 mr-2"></i>Poor insights due to 9km+ grid spaces</li>
+                    <li><i class="fas fa-times text-red-500 mr-2"></i>Time resolutions of 3-6 hour increments</li>
+                    <li><i class="fas fa-times text-red-500 mr-2"></i>Misses microweather phenomena</li>
+                    <li><i class="fas fa-times text-red-500 mr-2"></i>Extremely time consuming and costly</li>
+                </ul>
+            </div>
+            <!-- Solution Column -->
+            <div class="w-full md:w-1/2 pl-0 md:pl-10">
+                <img src="w2.png" alt="Solution Image" class="w-full h-auto mb-8 shadow-lg transform -rotate-3">
+                <h2 class="text-2xl font-bold mb-4">The Solution</h2>
+                <p class="text-gray-700 mb-4">The accelerated WRF software product AceCAST can enable faster high resolution forecasts which will enable better operating decisions through better insights into severe weather. This will enable recovery of the lost profit.</p>
+                <h2 class="text-2xl font-bold mb-4">The AceCAST Advantage</h2>
+                <ul class="list-none pl-5 text-gray-700">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Greater insights with <= 1km+ grid spaces</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Time resolutions of 1 minute to 1 hour increments</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Captures microweather phenomena</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>10x faster and 3x less expensive</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Acceleration using GPU technology</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- AceCast Advantage SECTION ENDS -->
+
+
+
+    <!-- AceCast Feature Icons -->
+    
+    <div class="mx-auto container f-f-p px-4 xl:px-0 py-24">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-700">
+            AceCAST <span class="gradient-text">Excels</span> at <span class="gradient-text"></span>
+          </h2>
+        <div class="md:mt-24 f-f-p">
+            <div class="hidden md:flex justify-center w-full">
+                <div class="flex flex-col items-center md:items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
+                    <div aria-label="sign up bg-blue-500 rounded-full p-2" role="img">
+                        <i class="bg-blue-500 rounded-full p-2 fas fa-map-marker-alt text-1xl mt-24 text-white"></i>
+                    </div>
+                    <div aria-label="2" role="img">
+                        <img class="focus:outline-none mt-24" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg2.svg" alt="">
+                    </div>
+                    <div class="flex mt-12 flex-col items-center lg:items-end md:w-8/12">
+                        <h1 class="focus:outline-none dark:text-white  text-xl font-bold leading-5">Intensity</h1>
+                        <h2 class="focus:outline-none text-gray-500 dark:text-gray-200 mt-3 pl-3 text-center md:text-right text-base leading-6 tracking-wide">Better insight into the INTENSITY of weather events to better understand severity.</h2>
+                    </div>
+                    <div aria-label="3" role="img">
+                        <i class="fas fa-bolt text-6xl mt-24"></i>
+                    </div>
+                    <img class="hidden md:block absolute right-0 top-0 -mt-2 -mr-1" src="https://cdn.tuk.dev/assets/components/111220/Fs7/line.png" alt="" />
+                </div>
+
+                <div class="flex flex-col items-center md:items-start md:pl-12 lg:border-gray-400 mt-20 md:mt-0 md:w-1/2">
+                    <div aria-label="1" role="img">
+                       <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg4.svg" alt="">
+                    </div>
+
+                    <div class="flex mt-6 flex-col items-center md:items-start md:w-8/12">
+                        <h1 class="focus:outline-none dark:text-white  text-xl font-bold leading-5">Location</h1>
+                        <h2 class="focus:outline-none text-gray-500 dark:text-gray-200 mt-3 text-base leading-6 tracking-wide">Better insights into the LOCATION of where severe weather will occur.</h2>
+                    </div>
+                    <div aria-label="wallet" role="img">
+                        <i class="fas fa-clock text-6xl mt-32"></i>
+                    </div>
+                    <div aria-label="3" role="img">
+                        <img class="focus:outline-none mt-20" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg6.svg" alt="">
+                    </div>
+                    <div class="flex mt-6 flex-col items-center md:items-start md:w-8/12">
+                        <h1 class="focus:outline-none text-xl dark:text-white font-bold leading-5">Time</h1>
+                        <h2 class="focus:outline-none text-gray-500 dark:text-gray-200 mt-3 text-base leading-6 tracking-wide">Better insight into the TIMING of severe weather events to ensure preservation of life.</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+    <!-- AceCast Feature Icons ENDS -->
+
+
+
+    <!-- The Power of TempoQuest SECTION -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-700">
+                <span class="gradient-text">Unleashing the Power of TempoQuest</span> 
+                
+            </h2>
+            <p class="mt-4 text-center text-gray-600 my-10 heading-desc">AceCAST, a product of TempoQuest, offers a more detailed understanding of tornado formation and improves early warning systems. Storm Relative Helicity (SRH) is a crucial measure of the potential for cyclonic updraft rotation in right-moving supercells. When SRH values exceed 250 m2 s-2, the threat of tornadoes with supercells increases significantly. Experience the difference...</p>
+
+            <div class="flex flex-wrap -mx-6">
+                <!-- The Power of TempoQuest Column -->
+                <div class="w-full md:w-1/2 px-6 mb-10 md:mb-0">
+                    <div class="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://tempoquest.com/wp-content/uploads/2021/09/SRH-1-1.jpg.webp" alt="3km Standard Resolution" class="w-full h-auto mb-4">
+                        <p class="text-center font-semibold">3km Standard Resolution</p>
+                    </div>
+                </div>
+                <!-- AceCAST Column -->
+                <div class="w-full md:w-1/2 px-6">
+                    <div class="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://tempoquest.com/wp-content/uploads/2021/09/SRH-2-1.jpg.webp" alt="1km High Resolution AceCAST" class="w-full h-auto mb-4">
+                        <p class="text-center font-semibold">1km High Resolution AceCAST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The Power of TempoQuest SECTION ENDS -->
+
+
+
+    <!-- VIDEO PROMO SECTION -->
+    <section class="tqi-intro-section">
+        <div class="tqi-container">
+            <div class="tqi-content">
+            <h1 class="tqi-title">Weather<br>Intelligence<br>Redefined</h1>
+            <p class="tqi-description">TempoQuest is revolutionizing weather prediction. We're preparing for the future impact of climate change with faster, more cost-effective localized forecasts.</p>
+            <button class="tqi-button" id="tqi-button">Register for Benchmarking</button>
+            </div>
+            <div class="tqi-video">
+            <iframe id="tqi-video-frame" src="https://tempoquest.com/wp-content/uploads/2022/11/AMD-TEMPOQUEST-NOVEMBER-2.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- VIDEO PROMO SECTION ENDS -->
+
+    <!-- CTA SECTION THREE STEP PROCESS -->
+    <section class="py-12 bg-white" style="background: linear-gradient(to right, #e0f7fa, #ffffff);">
+        <div class="f-f-p container mx-auto px-4 xl:px-0" >
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-center gap-8">
+                <div>
+                    <div class="flex items-center">
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_how_it_wroks-svg1.svg" alt="line">
+                        <img class="ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_how_it_wroks-svg2.svg" alt="chat">
+                    </div>
+                    <h1 role="heading" class="mt-6 md:mt-12 text-gray-700 dark:text-white text-2xl lg:text-5xl font-bold tracking-wider">Our 3 Step Proposition</h1>
+                    <p role="contentinfo" class="lg:w-8/12 text-gray-600 dark:text-gray-200 mt-5 mb-5 lg:mb-12">Experience the power of TempoQuest's advanced weather solutions. Unlock the weather advantage. Stay ahead of the storm. Weather empowered with TempoQuest.</p>
+                    <button role="button" aria-label="Go to Claims" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 md:py-5 md:px-6 py-3.5 px-6  bg-indigo-700 hover:bg-indigo-600 rounded text-lg font-medium leading-7 text-white shadow hover:opacity-90 focus:outline-none">I am Interested</button>
+                </div>
+                
+                <div class="flex justify-end w-full ">
+                    <div class="w-full pt-8 md:flex flex-col items-center hidden ">
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/CTA_1.svg" alt="CTA_1.svg"/>
+                        <img class="my-6" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Progress_1.svg" alt="progress bar1"/>
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/logo_02.svg" alt="CTA_2.svg"/>
+                        <img class="my-20" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Progress_2.svg" alt="progress_2"/>
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/logo_03.svg"  alt="CTA_3"/>  
+                    </div>
+                    <div role="list" class=" flex flex-col items-center ml-0 md:ml-8 lg:ml-16">
+                        <div role="listitem"  class="md:mt-2 lg:mt-0">
+                            <h1 role="heading" class="text-2xl  lg:text-3xl tracking-wider text-gray-700 dark:text-white">1. Free Consultation</h1>
+                            <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-gray-600 dark:text-gray-200">Meet with a TempoQuest expert to understand how accurate weather forecasting can benefit your business. We'll identify a potential case study tailored to your unique business case.</p>
+                        </div>
+                        <div role="listitem"  class="mt-6 md:mt-16">
+                            <h1 role="heading" class="text-2xl  lg:text-3xl text-gray-700 dark:text-white lg:mt-0">2. Case Study Simulation</h1>
+                            <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-gray-600 dark:text-gray-200">We'll conduct a free benchmark study, analyze the simulation results, and provide a cost-benefit analysis. You'll see firsthand how our services can lead to greater cost savings and better risk management.</p>
+                        </div>
+                        <div role="listitem"  class="mt-6 md:mt-16 lg:mt-16 xl:mt-12">
+                            <h1 role="heading" class="text-2xl  lg:text-3xl text-gray-700 dark:text-white lg:mt-0">3. Share Results & Offer Pricing</h1>
+                            <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-gray-600 dark:text-gray-200">Our flexible pricing and custom solutions cater to your specific needs. After sharing the results, we'll send a quote proposal. Upon acceptance, we'll begin the custom engineering process to deploy your solution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA SECTION THREE STEP PROCESS ENDS -->
+
+
+
+    <!-- INDUSTRIES SECTION  -->
+    <section id="industries" name="industries" class="py-12  bg-gray-100">
+        <div class="container mx-auto ">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-700">
+            <span class="gradient-text">Unleashing Weather Intelligence for Thriving Industries</span> 
+            
+        </h2>
+        <p class="mt-4 text-center text-gray-600 my-10 heading-desc">Discover how TempoQuest's cutting-edge technology revolutionizes weather forecasting, empowering renewable energy, agriculture, aviation, and shipping industries to excel with hyper-localized precision and unwavering reliability.</p>
+
+        
+            <div class="container mx-auto  flex flex-col align-center justify-between">
+                <div class="grid grid-cols-2 sm:grid-cols-4  gap-4 flex  justify-between">
+                    <div class="image-container">
+                        <img src="industry6.webp" alt="Renewable Energy Image">
+                        <div class="image-overlay">
+                            <h3 class="image-title">Renewable Energy</h3>
+                            <p class="image-description">Providing precise weather insights to optimize energy generation and improve renewable resource management.
+                            </p>
+                        </div>                            
+                    </div>
+                    <div class="image-container">
+                        <img src="industry2.jpg" alt="Agriculture Image">
+                        <div class="image-overlay">
+                            <h3 class="image-title">Agriculture</h3>
+                            <p class="image-description">Empowering farmers with accurate weather data for better crop planning, irrigation, and pest management.</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="industry3.avif" alt="Aviation Image">
+                        <div class="image-overlay">
+                            <h3 class="image-title">Aviation</h3>
+                            <p class="image-description">Enabling safer and more efficient flights by delivering real-time weather information and tailored forecasts for airports and airlines.</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="industry4.webp" alt="Shipping Image">
+                        <div class="image-overlay">
+                            <h3 class="image-title">Shipping and Logistics</h3>
+                            <p class="image-description">Enhancing supply chain operations by offering advanced weather intelligence for route optimization and cargo safety.</p>
+                        </div>
+                    </div>
+                    <!-- Add more image containers as needed -->
+                </div>
+            </div>
+        </div>
+        
+</section>
+<!-- INDUSTRIES SECTION ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SIGN UP NEWSLETTER SECTION -->
+    <section class="bg-gray-100 dark:bg-gray-900">
+        <div class="xl:flex xl:justify-end pt-16">
+            <div class="container sm:mx-auto">
+                <div class="block xl:flex justify-between xl:items-center lg:items-center md:flex">
+                    <div class="w-11/12 xl:w-4/12 mx-auto xl:mx-0 md:w-5/12">
+                        <h1 class="text-gray-800 dark:text-white  text-3xl font-extrabold mb-3 mt-12 xl:mt-0">Sign Up for Product Updates</h1>
+                        <p class="text-lg text-gray-600 dark:text-gray-200 mb-6">Sign Up for our newsletter to get the latest news updates and amazing offers delivered directly in your inbox.</p>
+                        <div class="flex w-full flex-wrap">
+                            <div class="w-full">
+                                <div class="flex flex-col mb-3">
+                                    <label class="text-base font-bold text-gray-800 dark:text-white  mb-2" for="email">Email</label>
+                                    <input type="email" id="email" placeholder="abc@gmail.com" class="focus:outline-none dark:bg-gray-800 dark:text-white dark:placeholder-gray-200 dark:border-gray-700  focus:border-indigo-700 border-gray-300 border rounded-sm py-2 outline-none pl-2 pr-2" />
+                                </div>
+                                <button type="submit" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 hover:bg-indigo-600 text-white text-base w-full py-3 px-6 rounded">Subscribe to Newsletter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-11/12 xl:w-5/12 mx-auto xl:mx-0 mt-8 xl:mt-0 flex justify-end md:w-5/12 bg-indigo-100 dark:bg-indigo-800 relative py-20">
+                        <div class="h-4/5 w-4/5">
+                            <img src="https://cdn.tuk.dev/assets/photo-1496430689199-7d6a8ebd3a2f.jfif" alt="A man jumping infront of a graffiti" role="img" class="h-full w-full overflow-hidden object-cover relative z-10 xl:-ml-56 lg:-ml-32 sm:-ml-20 -ml-12 md:-ml-20 rounded" />
+                        </div>
+                        <div class="absolute bottom-0 right-0 pb-2 pr-2 z-0">
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/input_field_with_image-svg1.svg" alt="pattern">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SING UP NEWSLETTER SECTION ENDS -->
+
+
+    <!-- FOOTER BEGIN -->
+    <div class="dark:bg-gray-900">
+        <section class="pb-14 pt-24 flex justify-center items-center bg-gray-100 dark:bg-gray-900">
+          <footer class="mt-20 mx-auto container md:w-full flex justify-center items-center">
+            <div class="flex xl:flex-row flex-col lg:gap-x-24 px-6 md:px-0">
+              <div class="flex flex-col flex justify-start items-start lg:w-80">
+                <div class="xl:flex-col flex justify-start items-center xl:items-start">
+                  <div class="flex justify-center mr-6 xl:mr-0 dark:text-white text-gray-800">
+                    <img class="dark:hidden" src="https://tempoquest.com/wp-content/uploads/2021/05/logo-white-transcended.png.webp" alt="logo">
+                    <img class="dark:block hidden" src="https://tempoquest.com/wp-content/uploads/2021/05/logo-white-transcended.png.webp" alt="logo">
+                  </div>
+                  <div class="flex justify-center flex-col">
+                    <div class="xl:mt-8">
+                      <p class="text-gray-600 dark:text-gray-300 text-sm leading-normal">Copyright © 2023 TempoQuest.</p>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-gray-600 dark:text-gray-300 text-sm leading-normal">All rights reserved</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8 flex justify-start items-start flex-row lg:space-x-4 space-x-2">
+                  <button aria-label="twitter" role="button" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 hover:opacity-75 text-gray-800 dark:text-white">
+                   <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_3-svg2.svg" alt="twitter">
+                   <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_3-svg2dark.svg" alt="twitter">
+                  </button>
+                  <button aria-label="youtube" role="button" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 hover:opacity-75 text-gray-800 dark:text-white">
+                    <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_3-svg3.svg" alt="youtube">
+                    <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_3-svg3dark.svg" alt="youtube">
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row mt-6 mt-8 xl:mt-0 lg:gap-x-14 gap-x-10">
+                <div class="grid lg:grid-cols-3 grid-cols-2 gap-y-10 lg:gap-y-0 gap-x-0 lg:gap-x-0">
+                  <div class="lg:w-40">
+                    <h2 class="text-gray-800 dark:text-white text-lg md:text-xl font-medium leading-loose">Company</h2>
+                    <div class="mt-6 flex flex justify-start items-start flex-col space-y-2">
+                      <div>
+                        <a href="javascript:void(0)" class="text-gray-800 dark:text-white focus:outline-none focus:opacity-75 hover:opacity-75 text-sm md:text-base leading-relaxed">About us</a>
+                      </div>
+                      <div>
+                        <a href="javascript:void(0)" class="text-gray-800 dark:text-white focus:outline-none focus:opacity-75 hover:opacity-75 text-sm md:text-base leading-relaxed">Our Team</a>
+                      </div>
+                      <div>
+                        <a href="javascript:void(0)" class="text-gray-800 dark:text-white focus:outline-none focus:opacity-75 hover:opacity-75 text-sm md:text-base leading-relaxed">Contact us</a>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="lg:w-40">
+                    <h2 class="text-gray-800 dark:text-white text-lg md:text-xl font-medium leading-loose">Products and Services</h2>
+                    <div class="mt-6 flex flex justify-start items-start flex-col space-y-2">
+                      <div>
+                        <a href="javascript:void(0)" class="text-gray-800 dark:text-white focus:outline-none focus:opacity-75 hover:opacity-75 text-sm md:text-base leading-relaxed">Our Products</a>
+                      </div>
+                      <div>
+                        <a href="javascript:void(0)" class="text-gray-800 dark:text-white focus:outline-none focus:opacity-75 hover:opacity-75 text-sm md:text-base leading-relaxed">Services</a>
+                      </div>
+                      <div>
+                        <a href="javascript:void(0)" class="text-gray-800 dark:text-white focus:outline-none focus:opacity-75 hover:opacity-75 text-sm md:text-base leading-relaxed">Pricing</a>
+                      </div>
+                      <div>
+                        <a href="javascript:void(0)" class="text-gray-800 dark:text-white focus:outline-none focus:opacity-75 hover:opacity-75 text-sm md:text-base leading-relaxed">Terms and Conditions</a>
+                      </div>
+                      <div>
+                        <a href="javascript:void(0)" class="text-gray-800 dark:text-white focus:outline-none focus:opacity-75 hover:opacity-75 text-sm md:text-base leading-relaxed">Partnerships</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sm:block hidden">
+                    <h2 class="w-60 text-lg md:text-xl font-medium leading-loose text-gray-800 dark:text-white">TempoQuest Inc</h2>
+                    <div class="addressblock">
+                        <p class="tqi-footer-text"><i class="fas fa-map-marker-alt"></i> 1434 Spruce St., Suite 100, Boulder, CO 80302</p>
+                        <p class="tqi-footer-text"><i class="fas fa-envelope"></i> <a href="mailto:info@tempoquest.com">info@tempoquest.com</a></p>
+                        <p class="tqi-footer-text"><i class="fas fa-phone-alt"></i> 720 726 8297</p>
+                        <p class="tqi-footer-text"><i class="fas fa-phone-alt"></i> 702-220-6444</p>
+                        <p class="tqi-footer-text"><i class="fas fa-globe"></i> <a href="https://www.tempoquest.com">www.tempoquest.com</a></p>
+           
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sm:hidden sm:mt-0 mt-4">
+                <h2 class="w-60 text-lg md:text-xl font-medium leading-loose text-gray-800 dark:text-white">TempoQuest Inc</h2>
+                <div class="addressblock">
+                    <p class="tqi-footer-text"><i class="fas fa-map-marker-alt"></i> 1434 Spruce St., Suite 100, Boulder, CO 80302</p>
+                    <p class="tqi-footer-text"><i class="fas fa-envelope"></i> <a href="mailto:info@tempoquest.com">info@tempoquest.com</a></p>
+                    <p class="tqi-footer-text"><i class="fas fa-phone-alt"></i> 720 726 8297</p>
+                    <p class="tqi-footer-text"><i class="fas fa-phone-alt"></i> 702-220-6444</p>
+                    <p class="tqi-footer-text"><i class="fas fa-globe"></i> <a href="https://www.tempoquest.com">www.tempoquest.com</a></p>
+       
+                </div>
+                <div class="dark:bg-gray-800 bg-white rounded-lg mt-6 flex flex justify-start items-start flex-col space-y-2">
+                  <div class="w-full flex justify-between items-center space-x-2 sm:space-x-0">
+                    <div class="relative w-full">
+                      <input class="bg-transparent focus:outline-none focus:ring-2 w-full focus:ring-gray-400 h-10 p-2 dark:placeholder-gray-300 placeholder-gray-600 text-xs md:text-base" type="text" placeholder="Your email address" />
+                      <button class="absolute right-0 top-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:opacity-75 p-2 sm:p-0 sm:w-12 h-10 flex justify-center items-center bg-gradient-to-l from-indigo-600 to-indigo-700 rounded-sm">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0845 12.9998C24.0845 13.2879 23.9194 13.5506 23.6599 13.6755L9.34094 20.5698C9.06387 20.7032 8.73344 20.654 8.50731 20.4456C8.28118 20.2372 8.20518 19.9119 8.31557 19.6249L10.8637 12.9998L8.31557 6.37474C8.20518 6.08772 8.28118 5.7624 8.50731 5.554C8.73344 5.3456 9.06387 5.29635 9.34094 5.42976L23.6599 12.324C23.9194 12.449 24.0845 12.7117 24.0845 12.9998ZM12.1823 13.7498L10.3947 18.3977L20.048 13.7498H12.1823ZM20.048 12.2498L10.3947 7.60193L12.1823 12.2498H20.048Z" fill="white" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="18" height="18" fill="white" transform="translate(12.7279 0.271973) rotate(45)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+      <!-- FOOTER ENDS -->
+
+
+
+
+    
+
+</body>
+</html>
