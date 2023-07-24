@@ -1,0 +1,198 @@
+{
+  "style": {
+    "font-family": "sans-serif",
+    "background-color": "#FAFCFF",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#4C8EDA",
+    "border-width": 2,
+    "border-color": "#2870c2",
+    "radius": 25,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 10,
+    "caption-font-weight": "normal",
+    "label-position": "outside",
+    "label-display": "bare",
+    "label-color": "#ffffff",
+    "label-background-color": "#4C8EDA",
+    "label-border-color": "#4C8EDA",
+    "label-border-width": 0,
+    "label-font-size": 10,
+    "label-padding": 2,
+    "label-margin": 2,
+    "directionality": "directed",
+    "detail-position": "inline",
+    "detail-orientation": "parallel",
+    "arrow-width": 1,
+    "arrow-color": "#A5ABB6",
+    "margin-start": 0,
+    "margin-end": 0,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#000000",
+    "type-background-color": "#ffffff",
+    "type-border-color": "#000000",
+    "type-border-width": 0,
+    "type-font-size": 10,
+    "type-padding": 2,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#000000",
+    "property-font-size": 10,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "caption": "Maldives",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "name": "Maldives",
+        "description": "The Maldives is a tropical paradise in the Indian Ocean, known for its stunning white-sand beaches, crystal-clear waters, and abundant marine life.",
+        "latitude": "3.2028",
+        "longitude": "73.2207",
+        "visa_info": "Tourist visas for 30 days are issued on arrival for all nationalities.",
+        "customs_info": "Import of alcohol, pork products, and certain other items is prohibited.",
+        "health_safety_info": "Visitors are advised to take precautions against sunburn, dehydration, and mosquito-borne diseases.",
+        "currency_info": "The currency of the Maldives is the Maldivian Rufiyaa (MVR). Credit cards are widely accepted at resorts and hotels.",
+        "language_info": "The official language is Dhivehi, but English is widely spoken in tourist areas.",
+        "time_zone": "Maldives Standard Time (GMT+5)",
+        "climate_info": "Tropical monsoon climate. Average daily temperature is around 28°C (82°F).",
+        "travel_advisory": "Check for the latest COVID-19 travel advisories beforeplanning your trip.",
+        "population": "540,544 (2022 estimate)",
+        "electric_outlet_type": "Type D and G outlets",
+        "voltage_info": "230V, 50Hz",
+        "cultural_info": "The Maldives is a Muslim country and visitors should respect local customs.",
+        "cuisine_info": "Seafood plays a major role in Maldivian cuisine. Popular dishes include mas huni and bis keemiya.",
+        "flora_fauna_info": "The Maldives is home to a variety of marine life, including manta rays, whale sharks, and over 2,000 species of fish.",
+        "conservation_info": "The Maldives has several protected marine areas and is a world leader in sustainable tourism."
+      },
+      "style": {}
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": 200,
+        "y": 200
+      },
+      "caption": "Atolls",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "Atoll Name": "Example Atoll",
+        "Geographical Coordinates": "Example Latitude, Example Longitude",
+        "Description": "Example description of the atoll.",
+        "Islands": "Example number or list of islands",
+        "Accommodations": "Example information about accommodations",
+        "Activities": "Example information about activities",
+        "Transport": "Example information about transport services",
+        "Amenities": "Example information about amenities"
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 400,
+        "y": 400
+      },
+      "caption": "Atoll_amenity",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "Name": "Example Amenity",
+        "Type": "Example Type",
+        "Description": "Example description of the amenity.",
+        "Geographical Coordinates": "Example Latitude, Example Longitude",
+        "Additional Information": "Example additional information"
+      }
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 600,
+        "y": 600
+      },
+      "caption": "Resort_Island",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "Island Name": "Example Island",
+        "Geographical Coordinates": "Example Latitude, Example Longitude",
+        "Description": "Example description of the island.",
+        "Local Amenities": "Example information about local amenities",
+        "Transportation": "Example information about transportation options",
+        "Cultural Significance": "Example information about cultural or historical significance",
+        "Nearby Attractions": "Example information about nearby attractions"
+      }
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": 800,
+        "y": 800
+      },
+      "caption": "Local_Island",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "Island Name": "Example Local Island",
+        "Geographical Coordinates": "Example Latitude, Example Longitude",
+        "Description": "Example description of the local island.",
+        "Local Amenities": "Example information about local amenities",
+        "Transportation": "Example information about transportation options",
+        "Cultural Significance": "Example information about cultural or historical significance",
+        "Nearby Attractions": "Example information about nearby attractions"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "r0",
+      "type": "HAS_ATOLLS",
+      "style": {},
+      "properties": {},
+      "fromId": "n0",
+      "toId": "n1"
+    },
+    {
+      "id": "r1",
+      "type": "HAS_AMENITY",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n2"
+    },
+    {
+      "id": "r2",
+      "type": "HAS_RESORT_ISLAND",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n3"
+    },
+    {
+      "id": "r3",
+      "type": "HAS_LOCAL_ISLAND",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n4"
+    }
+  ]
+}
