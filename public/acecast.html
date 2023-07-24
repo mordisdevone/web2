@@ -90,6 +90,19 @@
           height:40px;
           border:2px solid white;
         }
+
+        /* Flexbox Grid */
+        .aceadvantage .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        /* Each column flex grow */
+        .aceadvantage .container .problem-column, .solution-column {
+          flex-grow: 1;
+          margin: 0.5rem;
+        }
     </style>
 
 </head>
@@ -133,7 +146,7 @@
 
           <div class="mt-12 hero-ctas">
             <div class="mr-6 mt-5 sm:mt-0 md:mt-5 lg:mt-0">
-              <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-4 text-base md:text-xl">Read the Docs</button>
+              <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-4 text-base md:text-xl">Register to Try - Free</button>
             </div>
           </div>
         </div>
@@ -312,50 +325,69 @@
 </section>
 <!-- VIDEO PROMO SECTION ENDS -->
 
-
 <!-- AceCast Advantage SECTION -->
 <section class="aceadvantage bg-gray-100 py-12">
   <div class="container mx-auto px-6 py-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div class="flex flex-col md:flex-row gap-8">
          
-          <!-- Solution Column -->
-          <div class="rounded-lg shadow-lg p-8 bg-white flex flex-col items-center justify-center">
-            <div class="flex items-center justify-center w-20 h-20 mb-4 bg-red-500 rounded-full">
-              <i class="fas fa-exclamation-triangle text-white text-5xl"></i>
-          </div>
-              <h2 class="text-2xl font-bold mb-4">The Problem</h2>
+          <!-- Problem Column -->
+          <div class="flex flex-col problem-column rounded-lg shadow-lg p-8 bg-white justify-between">
+            <!-- Problem Content -->
+            <div>
+              <div class="flex items-center justify-center w-20 h-20 mb-4 bg-red-500 rounded-full">
+                <i class="fas fa-exclamation-triangle text-white text-5xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">The Problem : Generic Modeling Solutions</h3>
               <p class="text-gray-700 mb-4">The cost of ineffective and non-forecasted weather in lost business profit is 3.4% of GDP or $714 billion for 2022. This has long been considered the cost of doing business.</p>
-              <h2 class="text-1xl font-bold mb-4">Generic Modeling Solutions</h2>
-              <ul class="list-disc pl-5 text-gray-700 text-left">
-                <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Poor insights due to 9km+ grid spaces</li>
-                <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Time resolutions of 3-6 hour increments</li>
-                <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Misses microweather phenomena</li>
-                <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Extremely time consuming and costly</li>
-                <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Complex workflows and harder to implement</li>
-              </ul>
+            </div>
+            <!-- Problem List -->
+            <ul class="list-none list-pro pl-5 text-gray-700 text-left">
+              <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Poor insights due to 9km+ grid spaces</li>
+              <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Time resolutions of 3-6 hour increments</li>
+              <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Misses microweather phenomena</li>
+              <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Extremely time consuming and costly</li>
+              <li class="mb-2"><i class="fas fa-times text-red-500 mr-2"></i>Complex workflows and harder to implement</li>
+            </ul>
           </div>
-
 
           <!-- Solution Column -->
-          <div class="rounded-lg shadow-lg p-8 bg-white flex flex-col items-center justify-center">
-            <div class="flex items-center justify-center w-20 h-20 mb-4 bg-green-500 rounded-full">
-              <i class="fas fa-check text-white text-5xl"></i>
-          </div>
-              <h2 class="text-2xl font-bold mb-4">The Solution</h2>
+          <div class="flex flex-col solution-column rounded-lg shadow-lg p-8 bg-white justify-between">
+            <!-- Solution Content -->
+            <div>
+              <div class="flex items-center justify-center w-20 h-20 mb-4 bg-green-500 rounded-full">
+                <i class="fas fa-check text-white text-5xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">The Solution : The AceCAST Advantage</h3>
               <p class="text-gray-700 mb-4">The accelerated WRF software product AceCAST can enable faster high resolution forecasts which will enable better operating decisions through better insights into severe weather.</p>
-              <h2 class="text-1xl font-bold mb-4">The AceCAST Advantage</h2>
-              <ul class="list-disc pl-5 text-gray-700 text-left">
-                  <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Greater insights with <= 1km+ grid spaces</li>
-                  <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Time resolutions of 1 minute to 1 hour increments</li>
-                  <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Captures microweather phenomena</li>
-                  <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>10x faster and 3x less expensive</li>
-                  <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Acceleration using GPU technology</li>
-              </ul>
+            </div>
+            <!-- Solution List -->
+            <ul class="list-none list-pro pl-5 text-gray-700 text-left">
+              <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Greater insights with <= 1km+ grid spaces</li>
+              <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Time resolutions of 1 minute to 1 hour increments</li>
+              <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Captures microweather phenomena</li>
+              <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>10x faster and 3x cheaper</li>
+              <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Acceleration using GPU technology</li>
+            </ul>
           </div>
       </div>
   </div>
 </section>
 <!-- AceCast Advantage SECTION ENDS -->
+
+
+
+<!-- Gradient Call-to-Action SECTION -->
+<section class="call-to-action" style="background: linear-gradient(180deg, #84fab0 0%, #8fd3f4 100%); position: relative;">
+  <div class="container mx-auto px-6 py-5 text-center">
+      <h2 class="text-4xl lg:text-5xl font-bold text-white maroon">Save Money with Weather Intelligence</h2>
+      <p class="mt-5 text-xl maroon">See how you can reduce costs and boost efficiency with our tailored weather forecasts.</p>
+      <button class="mt-8 px-8 py-4 mb-10 text-xl font-bold text-white bg-indigo-600 rounded-lg">Contact us today</button>
+  </div>
+
+</section>
+<!-- Gradient Call-to-Action SECTION ENDS -->
+
+
 
 
 
@@ -403,7 +435,7 @@
 
 
   <!-- CTA SECTION THREE STEP PROCESS -->
-  <section class="py-12 bg-white" style="background: linear-gradient(to right, #e0f7fa, #ffffff);">
+  <section class="py-12 bg-white homecta3step">
     <div class="f-f-p container mx-auto px-4 xl:px-0" >
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-center gap-8">
             <div>
@@ -411,8 +443,8 @@
                     <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_how_it_wroks-svg1.svg" alt="line">
                     <img class="ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_how_it_wroks-svg2.svg" alt="chat">
                 </div>
-                <h1 role="heading" class="mt-6 md:mt-12 text-gray-700 dark:text-white text-2xl lg:text-5xl font-bold tracking-wider">Our 3 Step Proposition</h1>
-                <p role="contentinfo" class="lg:w-8/12 text-gray-600 dark:text-gray-200 mt-5 mb-5 lg:mb-12">Experience the power of TempoQuest's advanced weather solutions. Unlock the weather advantage. Stay ahead of the storm. Weather empowered with TempoQuest.</p>
+                <h1 role="heading" class="mt-6 md:mt-12 text-white text-2xl lg:text-5xl font-bold tracking-wider">Our 3 Step Proposition</h1>
+                <p role="contentinfo" class="lg:w-8/12 text-white mt-5 mb-5 lg:mb-12">Experience the power of TempoQuest's advanced weather solutions. Unlock the weather advantage. Stay ahead of the storm. Weather empowered with TempoQuest.</p>
                 <button role="button" aria-label="Go to Claims" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 md:py-5 md:px-6 py-3.5 px-6  bg-indigo-700 hover:bg-indigo-600 rounded text-lg font-medium leading-7 text-white shadow hover:opacity-90 focus:outline-none">I am Interested</button>
             </div>
             
@@ -426,16 +458,16 @@
                 </div>
                 <div role="list" class=" flex flex-col items-center ml-0 md:ml-8 lg:ml-16">
                     <div role="listitem"  class="md:mt-2 lg:mt-0">
-                        <h1 role="heading" class="text-2xl  lg:text-3xl tracking-wider text-gray-700 dark:text-white">1. Free Consultation</h1>
-                        <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-gray-600 dark:text-gray-200">Meet with a TempoQuest expert to understand how accurate weather forecasting can benefit your business. We'll identify a potential case study tailored to your unique business case.</p>
+                        <h1 role="heading" class="text-2xl  lg:text-3xl tracking-wider text-white">1. Free Consultation</h1>
+                        <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-white">Meet with a TempoQuest expert to understand how accurate weather forecasting can benefit your business. We'll identify a potential case study tailored to your unique business case.</p>
                     </div>
                     <div role="listitem"  class="mt-6 md:mt-16">
-                        <h1 role="heading" class="text-2xl  lg:text-3xl text-gray-700 dark:text-white lg:mt-0">2. Case Study Simulation</h1>
-                        <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-gray-600 dark:text-gray-200">We'll conduct a free benchmark study, analyze the simulation results, and provide a cost-benefit analysis. You'll see firsthand how our services can lead to greater cost savings and better risk management.</p>
+                        <h1 role="heading" class="text-2xl  lg:text-3xl text-white lg:mt-0">2. Case Study Simulation</h1>
+                        <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-white">We'll conduct a free benchmark study, analyze the simulation results, and provide a cost-benefit analysis. You'll see firsthand how our services can lead to greater cost savings and better risk management.</p>
                     </div>
                     <div role="listitem"  class="mt-6 md:mt-16 lg:mt-16 xl:mt-12">
-                        <h1 role="heading" class="text-2xl  lg:text-3xl text-gray-700 dark:text-white lg:mt-0">3. Share Results & Offer Pricing</h1>
-                        <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-gray-600 dark:text-gray-200">Our flexible pricing and custom solutions cater to your specific needs. After sharing the results, we'll send a quote proposal. Upon acceptance, we'll begin the custom engineering process to deploy your solution.</p>
+                        <h1 role="heading" class="text-2xl  lg:text-3xl text-white lg:mt-0">3. Share Results & Offer Pricing</h1>
+                        <p  role="contentinfo" class="xl:w-9/12 mt-2 tracking-wide xl:leading-8 text-sm lg:text-base text-white">Our flexible pricing and custom solutions cater to your specific needs. After sharing the results, we'll send a quote proposal. Upon acceptance, we'll begin the custom engineering process to deploy your solution.</p>
                     </div>
                 </div>
             </div>

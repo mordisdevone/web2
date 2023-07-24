@@ -38,6 +38,9 @@ h6 {
   font-size: 16px;  
 }
 
+.maroon {
+  color: #706969;
+}
 
 /* Navigation */
 .nav-links {
@@ -114,7 +117,7 @@ h6 {
 /* END HAMBURGER MENU STYLE */
 
   .homecta3step{
-    background: linear-gradient(to right, #8291bb, #6d9eec); 
+    background: linear-gradient(to right, #0044ff, #6d9eec); 
   }
 
 
@@ -183,7 +186,7 @@ h6 {
   }
   
   .contact-form button[type="submit"]:hover {
-    background-color: #4754b4;
+    background-color: #0044ff;
   }
   
   
@@ -884,7 +887,8 @@ background-color: #c79346;
 
 /* ACECAST PRODUCT PAGE STYLES */
 .aceadvantage {
-  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background: linear-gradient(360deg, #84fab0 0%, #8fd3f4 100%);
+  
 }
 
 
@@ -900,4 +904,17 @@ background-color: #c79346;
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(to right, #006108, #8fd3f4 );
+}
+
+ul.list-pro li{
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  background: black;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+  float: left;
+  width: 300px;
+  font-size: 13px;
 }
